@@ -2,6 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>YouTube Player</title>
     <style>
         body { margin: 0; padding: 0; overflow: hidden; }
@@ -10,12 +11,8 @@
 </head>
 <body>
     <div id="player"></div>
+    <script src="https://www.youtube.com/iframe_api"></script>
     <script>
-        var tag = document.createElement('script');
-        tag.src = "https://www.youtube.com/iframe_api";
-        var firstScriptTag = document.getElementsByTagName('script')[0];
-        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
         var player;
         function onYouTubeIframeAPIReady() {
             player = new YT.Player('player', {
@@ -36,12 +33,17 @@
         }
 
         function onPlayerReady(event) {
-            // El reproductor está listo
             console.log("Player is ready");
+            if (window.unity) {
+                window.unity.call("onPlayerReady");
+            }
         }
 
         function onPlayerStateChange(event) {
             console.log("Player state changed: " + event.data);
+            if (window.unity) {
+                window.unity.call("onPlayerStateChange," + event.data);
+            }
         }
 
         function playVideo() {
@@ -54,15 +56,6 @@
 
         function loadVideo(videoId) {
             player.loadVideoById(videoId);
-        }
-
-        // Función para comunicarse con Unity
-        function sendMessageToUnity(msg) {
-            if (window.unity) {
-                window.unity.call(msg);
-            } else {
-                console.log("Unity interface not found");
-            }
         }
     </script>
 </body>
