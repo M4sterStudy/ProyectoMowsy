@@ -1,7 +1,4 @@
-# This .gitignore file should be placed at the root of your Unity project directory
-#
-# Get latest from https://github.com/github/gitignore/blob/main/Unity.gitignore
-#
+# Ignore UserSettings but track specific layouts
 [Ll]ibrary/
 [Tt]emp/
 [Oo]bj/
@@ -9,6 +6,12 @@
 [Bb]uilds/
 [Ll]ogs/
 [Uu]ser[Ss]ettings/
+
+# Ignore all user settings except for layouts
+!UserSettings/
+UserSettings/*.dwlt
+!UserSettings/Layouts/
+UserSettings/Layouts/default-2022.dwlt
 
 # MemoryCaptures can get excessive in size.
 # They also could contain extremely sensitive data
