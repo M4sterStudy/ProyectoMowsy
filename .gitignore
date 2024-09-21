@@ -80,3 +80,6 @@ Assets/Firebase/Plugins/x86_64/*.so
 Assets/Firebase/Plugins/x86_64/FirebaseCppApp-12_2_1.bundle
 Assets/Firebase/Plugins/x86_64/FirebaseCppApp-12_2_1.so
 
+# Permitir DLLs en la carpeta Plugins
+!Assets/Plugins/*.dll
+
