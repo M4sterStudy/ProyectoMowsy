@@ -12,7 +12,7 @@ public class VerifyRoomCode : MonoBehaviour
     public Button verifyCodeButton; // Botón para verificar el código
     private FirebaseFirestore db; // Referencia a Firestore
     private FirebaseInitializer firebaseInitializer; // Referencia al inicializador de Firebase
-    public string targetSceneName; // Nombre de la escena a la que se cambiará si el código es correcto
+    public string sceneToLoad; // Nombre de la escena a la que se cambiará si el código es correcto
 
     void Start()
     {
@@ -76,6 +76,7 @@ public class VerifyRoomCode : MonoBehaviour
             {
                 if (task.Result.Count > 0)
                 {
+                    
                     Debug.Log("Código encontrado en la base de datos, cambiando de escena...");
                     ChangeScene();
                 }
@@ -94,8 +95,8 @@ public class VerifyRoomCode : MonoBehaviour
     // Método para cambiar de escena
     public void ChangeScene()
     {
-        UnityMainThreadDispatcher.Instance().Enqueue(() => {
-            SceneManager.LoadScene(targetSceneName);
-        });
+            SceneManager.LoadScene(sceneToLoad);
+            Debug.Log("chingatumadre");
+        
     }
 }

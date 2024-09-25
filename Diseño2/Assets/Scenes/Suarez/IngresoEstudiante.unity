@@ -1485,7 +1485,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   codeInputField: {fileID: 271464106}
   verifyCodeButton: {fileID: 1477319083}
-  targetSceneName: Canvas General (rueda de ajustes)
+  targetSceneName: Voto
 --- !u!1 &1477319081
 GameObject:
   m_ObjectHideFlags: 0
