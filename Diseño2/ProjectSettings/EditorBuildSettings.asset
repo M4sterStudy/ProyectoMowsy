@@ -6,6 +6,27 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Lara/Login y Registre/Pagina inicio (escoger el rol).unity
+    guid: e3a4a1be8a51630438a05bbeae33c129
+  - enabled: 1
+    path: Assets/Scenes/Arenas/Escenas/Voto.unity
+    guid: 806d1b64c31a9964b819350758539eb6
+  - enabled: 1
+    path: Assets/Scenes/Jacobo/Scenes/HistoriaVideojuegos.unity
+    guid: 7fc41df298513e048b8882b22de3f07a
+  - enabled: 1
+    path: Assets/Scenes/Jacobo/Scenes/HistoriaMusica.unity
+    guid: b106bef17daf1224cb6d09715e44b018
+  - enabled: 1
+    path: Assets/Scenes/Jacobo/Scenes/HistoriaLiteratura.unity
+    guid: 862d4cf3eaacc24438ed443808a63782
+  - enabled: 1
+    path: Assets/Scenes/Jacobo/Scenes/HistoriaDeportes.unity
+    guid: 640e9e113df899e44a69f2b8cb80a0c8
+  - enabled: 1
+    path: Assets/Scenes/Jacobo/Scenes/HistoriaCine.unity
+    guid: 7e04da9ba9dc3c041b1801cf8a76e847
+  - enabled: 1
     path: Assets/Scenes/Pruebas/Scens managers/Prueba Escena 1.unity
     guid: b2fcdf123ee7689479e4e2406e95e2c3
   - enabled: 1
