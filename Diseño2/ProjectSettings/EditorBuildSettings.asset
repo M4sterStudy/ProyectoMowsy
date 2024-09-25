@@ -38,4 +38,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Pruebas/Scens managers/Prueba Escena 3.unity
     guid: 655141a646be49d46a12f87faa14f176
+  - enabled: 1
+    path: Assets/Scenes/Arenas/Escenas/Escritura.unity
+    guid: 34f260781c8dc2c43ab90441fc1c22ac
+  - enabled: 1
+    path: Assets/Scenes/Jacobo/Scenes/VideoJuegos.unity
+    guid: e6931ed1fc9cf8d42873799f1070b8fe
   m_configObjects: {}
