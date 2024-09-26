@@ -9,6 +9,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Lara/Login y Registre/Pagina inicio (escoger el rol).unity
     guid: e3a4a1be8a51630438a05bbeae33c129
   - enabled: 1
+    path: Assets/Scenes/Arenas/Escenas/ProfesorInterfaz1.unity
+    guid: ca15a18a4a44ef64098c62cef9de6204
+  - enabled: 1
+    path: Assets/Scenes/Suarez/UI Profesor.unity
+    guid: 22d2a1739b1a5684bbcdab240f9d63da
+  - enabled: 1
     path: Assets/Scenes/Suarez/IngresoEstudiante.unity
     guid: ac32cd5dc4197544181c4141c7e78631
   - enabled: 1
