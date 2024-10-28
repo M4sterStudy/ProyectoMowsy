@@ -400,7 +400,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -29, y: -359}
+  m_AnchoredPosition: {x: -31, y: -447.72}
   m_SizeDelta: {x: 300, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &478775142
@@ -1412,7 +1412,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -356.27997, y: -606}
+  m_AnchoredPosition: {x: -760, y: -443}
   m_SizeDelta: {x: 69.449, y: 69.449}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1022856897
@@ -1681,7 +1681,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edc892e8426f6904aa92053fdee4f279, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneToLoad: Escritura
+  sceneToLoad: EscrituraCine
   yourButton: {fileID: 478775142}
 --- !u!4 &1190327161
 Transform:

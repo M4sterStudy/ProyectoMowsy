@@ -421,7 +421,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 307, y: -121}
+  m_AnchoredPosition: {x: 271, y: -104}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &423982485
@@ -596,7 +596,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -83, y: -110}
+  m_AnchoredPosition: {x: -128, y: -93}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &463690065
@@ -1007,7 +1007,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000022888, y: -484}
+  m_AnchoredPosition: {x: 0.000022888, y: -414}
   m_SizeDelta: {x: 555.6172, y: 83.728}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &708470524
@@ -1125,7 +1125,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -83, y: 61}
+  m_AnchoredPosition: {x: -128, y: 78}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &816622089
@@ -1317,8 +1317,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -11}
-  m_SizeDelta: {x: 0, y: -1335.8746}
+  m_AnchoredPosition: {x: 0, y: -5.364197}
+  m_SizeDelta: {x: -1006.2573, y: -556.626}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &911105686
 MonoBehaviour:
@@ -1585,8 +1585,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 297, y: -16}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 271, y: 29}
+  m_SizeDelta: {x: 0, y: 1022.4885}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1243728503
 MonoBehaviour:
@@ -1655,7 +1655,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edc892e8426f6904aa92053fdee4f279, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneToLoad: Escritura
+  sceneToLoad: EscrituraVideojuegos
   yourButton: {fileID: 675504045}
 --- !u!4 &1340561057
 Transform:

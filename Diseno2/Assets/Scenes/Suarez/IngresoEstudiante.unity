@@ -1187,8 +1187,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 1918.6875}
-  m_SizeDelta: {x: 840, y: 1493.3335}
+  m_AnchoredPosition: {x: 0.004638672, y: 1267}
+  m_SizeDelta: {x: 1493.3, y: 1493.3335}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &527602124
 Animator:
@@ -1908,7 +1908,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   codeInputField: {fileID: 271464106}
   verifyCodeButton: {fileID: 1477319083}
-  targetSceneName: Voto
+  targetSceneName: SalaEspera
 --- !u!1 &1477319081
 GameObject:
   m_ObjectHideFlags: 0
@@ -2669,8 +2669,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 98}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: -636.1617, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2013755100
 MonoBehaviour:

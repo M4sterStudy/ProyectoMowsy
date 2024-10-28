@@ -18,6 +18,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Suarez/IngresoEstudiante.unity
     guid: ac32cd5dc4197544181c4141c7e78631
   - enabled: 1
+    path: Assets/Scenes/Arenas/Escenas/SalaEspera.unity
+    guid: be36dfbecf22a7e45ac4dcd8e90a9ac1
+  - enabled: 1
     path: Assets/Scenes/Arenas/Escenas/Voto.unity
     guid: 806d1b64c31a9964b819350758539eb6
   - enabled: 1
@@ -57,6 +60,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Jacobo/Scenes/EleccionMusica.unity
     guid: 08ef44159a6586e4c9e8a8590164fc5e
   - enabled: 1
+    path: Assets/Scenes/Jacobo/Scenes/EleccionLiteratura.unity
+    guid: 29d5188f28dc26e4c820788eb06896ec
+  - enabled: 1
     path: Assets/Scenes/Jacobo/Scenes/EleccionVideoJuegos.unity
     guid: 12b2c8db1ed578543897c7413d0fbb7a
   - enabled: 1
@@ -78,6 +84,18 @@ EditorBuildSettings:
     path: Assets/Scenes/Jacobo/Scenes/VideoVideojuegos.unity
     guid: 259c9e8c8edcded4e9fadd0abad384b0
   - enabled: 1
-    path: Assets/Scenes/Arenas/Escenas/Escritura.unity
+    path: Assets/Scenes/Arenas/Escenas/EscrituraDeportes.unity
     guid: 34f260781c8dc2c43ab90441fc1c22ac
+  - enabled: 1
+    path: Assets/Scenes/Arenas/Escenas/EscrituraCine.unity
+    guid: 986b3d23043e2864398fbc89ae825790
+  - enabled: 1
+    path: Assets/Scenes/Arenas/Escenas/EscrituraLiteratura.unity
+    guid: 7199497c5abccea40be5bc4f5ada76c6
+  - enabled: 1
+    path: Assets/Scenes/Arenas/Escenas/EscrituraMusica.unity
+    guid: 879fa5e740635cf4b939d22e797cca57
+  - enabled: 1
+    path: Assets/Scenes/Arenas/Escenas/EscrituraVideojuegos.unity
+    guid: 3a19b66f518409544bbeebed5078e9f4
   m_configObjects: {}
