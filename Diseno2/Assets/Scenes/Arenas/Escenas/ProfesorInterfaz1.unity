@@ -5956,6 +5956,52 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1347899165}
   m_CullTransparentMesh: 1
+--- !u!1 &1452398501
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1452398503}
+  - component: {fileID: 1452398502}
+  m_Layer: 0
+  m_Name: CambioEscena1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1452398502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1452398501}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: edc892e8426f6904aa92053fdee4f279, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneToLoad: TematicasProfesor
+  yourButton: {fileID: 211142345}
+--- !u!4 &1452398503
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1452398501}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 705.7039, y: 952.27155, z: 3.076833}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1483572969
 GameObject:
   m_ObjectHideFlags: 0
@@ -8511,5 +8557,6 @@ SceneRoots:
   - {fileID: 1114073521}
   - {fileID: 1751196099}
   - {fileID: 180173246}
+  - {fileID: 1452398503}
   - {fileID: 1218824592}
   - {fileID: 232900505}

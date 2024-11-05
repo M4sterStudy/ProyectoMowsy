@@ -98,4 +98,52 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Arenas/Escenas/EscrituraVideojuegos.unity
     guid: 3a19b66f518409544bbeebed5078e9f4
+  - enabled: 1
+    path: Assets/Scenes/Arenas/Escenas/MaterialProfesor/CineP.unity
+    guid: 6f6fae6e6016ca74c8d090eeea0a411a
+  - enabled: 1
+    path: Assets/Scenes/Arenas/Escenas/MaterialProfesor/DeportesP.unity
+    guid: 3408763439a92544aa636cd199608fcd
+  - enabled: 1
+    path: Assets/Scenes/Arenas/Escenas/MaterialProfesor/EleccionCineP.unity
+    guid: 873ab165c2d76fd4a9c6fde0f7557649
+  - enabled: 1
+    path: Assets/Scenes/Arenas/Escenas/MaterialProfesor/EleccionDeportesP.unity
+    guid: 5a549c404f274a24ea5e90f70b6ded09
+  - enabled: 1
+    path: Assets/Scenes/Arenas/Escenas/MaterialProfesor/EleccionLiteraturaP.unity
+    guid: b716f070e4e5f6d4d9add152433175ac
+  - enabled: 1
+    path: Assets/Scenes/Arenas/Escenas/MaterialProfesor/EleccionMusicaP.unity
+    guid: 0bf2b87f32d63454ab76d8e6be3aeb88
+  - enabled: 1
+    path: Assets/Scenes/Arenas/Escenas/MaterialProfesor/EleccionVideoJuegosP.unity
+    guid: d1c77334646ea934e93ec4af2dcfae5e
+  - enabled: 1
+    path: Assets/Scenes/Arenas/Escenas/MaterialProfesor/LiteraturaP.unity
+    guid: 565a30f5f249d804699069f5652d38da
+  - enabled: 1
+    path: Assets/Scenes/Arenas/Escenas/MaterialProfesor/MusicaP.unity
+    guid: 2b173dd403fdcc948bfe23b6fa262bd0
+  - enabled: 1
+    path: Assets/Scenes/Arenas/Escenas/MaterialProfesor/TematicasProfesor.unity
+    guid: 16803a5d6b43e8b438d0ba7523a4a9e8
+  - enabled: 1
+    path: Assets/Scenes/Arenas/Escenas/MaterialProfesor/VideoCineP.unity
+    guid: 780baa783a38c0c44af63ad326e8776f
+  - enabled: 1
+    path: Assets/Scenes/Arenas/Escenas/MaterialProfesor/VideoDeportesP.unity
+    guid: ccfac2a86fc1325479489e7bf1d5fbc8
+  - enabled: 1
+    path: Assets/Scenes/Arenas/Escenas/MaterialProfesor/VideoJuegosP.unity
+    guid: 890d7c876c4638043a66ce1d90c48774
+  - enabled: 1
+    path: Assets/Scenes/Arenas/Escenas/MaterialProfesor/VideoLiteraturaP.unity
+    guid: f46823cf811f51f4a91efb3868202b79
+  - enabled: 1
+    path: Assets/Scenes/Arenas/Escenas/MaterialProfesor/VideoMusicaP.unity
+    guid: fdc6e77a4e598e844b2df0622d613b22
+  - enabled: 1
+    path: Assets/Scenes/Arenas/Escenas/MaterialProfesor/VideoVideojuegosP.unity
+    guid: 8f3657fbc91efeb43bc94af71739dd03
   m_configObjects: {}
