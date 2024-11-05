@@ -150,6 +150,7 @@ public class StudentRegistration : MonoBehaviour
         DocumentReference studentRef = db.Collection("Estudiantes").Document(userId);
         Dictionary<string, object> studentData = new Dictionary<string, object>
         {
+            { "ID_Estudiante", userId },
             { "Nombre", name },
             { "Apellido", lastName },
             { "Estado", "Activo" },

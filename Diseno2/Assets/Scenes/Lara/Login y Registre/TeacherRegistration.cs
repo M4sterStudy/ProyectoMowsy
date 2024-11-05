@@ -115,6 +115,7 @@ public class TeacherRegistration : MonoBehaviour
         DocumentReference teacherRef = db.Collection("Profesores").Document(userId);
         Dictionary<string, object> teacherData = new Dictionary<string, object>
     {
+        { "ID_Profesor", userId },  // Cambiado para usar "ID_Profesor" como clave
         { "Nombre", name },
         { "Apellido", lastName },
         { "Usuario", username },

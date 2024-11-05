@@ -73,37 +73,43 @@ public class CodeRoom : MonoBehaviour
 
     // Método para guardar el código de sala en Firestore
     private void CreateRoomDocument(string code)
-{
-    Debug.Log("Guardando código de sala en Firestore...");
+    {
+        Debug.Log("Guardando código de sala en Firestore...");
 
-    // Crear un ID único para la sala
-    string roomId = db.Collection("rooms").Document().Id;
+        // Crear un ID único para la sala
+        string roomId = db.Collection("rooms").Document().Id;
 
-    // Crear un diccionario para los datos de la sala
-    Dictionary<string, object> roomData = new Dictionary<string, object>
+        // Obtener el ID del profesor desde UserManager
+        string professorId = UserManager.Instance != null ? UserManager.Instance.TeacherDataID : "Desconocido";
+        Debug.Log($"ID_Profesor obtenido para guardar en la sala: {professorId}"); // Verifica que tenga el valor correcto
+
+        // Crear un diccionario para los datos de la sala
+        Dictionary<string, object> roomData = new Dictionary<string, object>
     {
         { "RoomCode", code },
-        { "Fechacreacion", DateTime.Now.ToString() }
-       
+        { "Fechacreacion", DateTime.Now.ToString() },
+        { "Estado", "Activa" },
+        { "ID_Profesor", professorId } // Almacena el ID del profesor
     };
 
-    // Guardar los datos en Firestore
-    db.Collection("rooms").Document(roomId).SetAsync(roomData).ContinueWith(task =>
-    {
-        if (task.IsCompleted)
+        // Guardar los datos en Firestore
+        db.Collection("rooms").Document(roomId).SetAsync(roomData).ContinueWith(task =>
         {
-            Debug.Log($"Código de sala guardado exitosamente en Firestore: {code}");
-        }
-        else if (task.IsFaulted)
-        {
-            Debug.LogError("Error al guardar el código de sala en Firestore.");
-            foreach (var e in task.Exception.Flatten().InnerExceptions)
+            if (task.IsCompleted)
             {
-                Debug.LogError("Error detallado: " + e.Message);
+                Debug.Log($"Código de sala guardado exitosamente en Firestore con ID_Profesor: {professorId}");
             }
-        }
-    });
-}
+            else if (task.IsFaulted)
+            {
+                Debug.LogError("Error al guardar el código de sala en Firestore.");
+                foreach (var e in task.Exception.Flatten().InnerExceptions)
+                {
+                    Debug.LogError("Error detallado: " + e.Message);
+                }
+            }
+        });
+    }
+
 
 
     // Método para mostrar el código de sala en la UI
