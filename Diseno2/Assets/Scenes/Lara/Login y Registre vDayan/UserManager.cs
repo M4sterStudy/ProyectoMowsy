@@ -30,6 +30,14 @@ public class UserManager : MonoBehaviour
         CurrentUser = user;
     }
 
+    public void ClearCurrentUser() // Agrega este método
+    {
+        CurrentUser = null;
+        TeacherData = null;
+        StudentData = null;
+        Debug.Log("User and related data cleared.");
+    }
+
     // Método para guardar datos de profesores
     public void SetTeacherData(Dictionary<string, object> data)
     {
