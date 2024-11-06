@@ -3,7 +3,7 @@ using UnityEngine.UI;
 
 public class VoteManager : MonoBehaviour
 {
-    public Button sportsButton, videoGamesButton, cinemaButton, musicButton;
+    public Button sportsButton, videoGamesButton, cinemaButton, musicButton, literatureButton;
 
     private void Start()
     {
@@ -15,6 +15,7 @@ public class VoteManager : MonoBehaviour
         videoGamesButton.onClick.AddListener(() => RegisterVote("VideoGamesVotes"));
         cinemaButton.onClick.AddListener(() => RegisterVote("CinemaVotes"));
         musicButton.onClick.AddListener(() => RegisterVote("MusicVotes"));
+        literatureButton.onClick.AddListener(() => RegisterVote("LiteratureVotes"));
     }
 
     private void RegisterVote(string category)
@@ -31,6 +32,7 @@ public class VoteManager : MonoBehaviour
         PlayerPrefs.SetInt("VideoGamesVotes", 0);
         PlayerPrefs.SetInt("CinemaVotes", 0);
         PlayerPrefs.SetInt("MusicVotes", 0);
+        PlayerPrefs.SetInt("LiteratureVotes", 0);
         PlayerPrefs.Save();
     }
 }
