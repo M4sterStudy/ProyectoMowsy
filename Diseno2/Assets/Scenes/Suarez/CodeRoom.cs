@@ -89,7 +89,10 @@ public class CodeRoom : MonoBehaviour
         { "RoomCode", code },
         { "Fechacreacion", DateTime.Now.ToString() },
         { "Estado", "Activa" },
-        { "ID_Profesor", professorId } // Almacena el ID del profesor
+        { "ID_Profesor", professorId }, // Almacena el ID del profesor
+        { "Estudiantes", new List<Dictionary<string, string>>() }, // Lista vacía para los estudiantes
+        { "ID_Tema_Seleccionado", null }, // Inicialmente vacío
+        { "ID_Texto_Seleccionado", null } // Inicialmente vacío
     };
 
         // Guardar los datos en Firestore

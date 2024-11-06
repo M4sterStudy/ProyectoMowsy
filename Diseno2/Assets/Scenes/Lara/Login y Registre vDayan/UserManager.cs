@@ -10,6 +10,7 @@ public class UserManager : MonoBehaviour
     public Dictionary<string, object> StudentData { get; private set; } // Agregado para almacenar datos de estudiantes
 
     public string TeacherDataID { get; private set; }
+    public string StudentDataID { get; private set; }
 
 
     public event System.Action OnTeacherDataLoaded;
@@ -63,10 +64,21 @@ public class UserManager : MonoBehaviour
 
 
     // Método para guardar datos de estudiantes
-    public void SetStudentData(Dictionary<string, object> data) // Agregado para estudiantes
+    public void SetStudentData(Dictionary<string, object> data) // Método para cargar datos del estudiante
     {
         Debug.Log("SetStudentData method called");
         StudentData = data;
+
+        if (data.ContainsKey("ID_Estudiante"))
+        {
+            StudentDataID = data["ID_Estudiante"].ToString();
+            Debug.Log($"ID_Estudiante establecido en UserManager: {StudentDataID}");
+        }
+        else
+        {
+            Debug.LogError("El diccionario de datos de estudiante no contiene la clave 'ID_Estudiante'.");
+        }
+
         OnStudentDataLoaded?.Invoke(); // Disparar evento cuando se carguen los datos del estudiante
     }
 }

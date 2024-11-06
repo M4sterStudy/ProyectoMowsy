@@ -5,7 +5,7 @@ using TMPro; // Para usar TextMeshPro
 using UnityEngine.SceneManagement; // Para cambiar escenas
 using UnityEngine.UI; // Para usar UI de botones
 using System.Collections;
-
+using System.Collections.Generic;
 public class VerifyRoomCode : MonoBehaviour
 {
     public TMP_InputField codeInputField; // Input donde el usuario ingresará el código
@@ -96,11 +96,46 @@ public class VerifyRoomCode : MonoBehaviour
         {
             Debug.Log("Código encontrado en la base de datos.");
             prueba = true; // Establecer prueba en true
+
+            // Obtener el ID y el nombre del estudiante desde UserManager
+            string studentId = UserManager.Instance?.StudentDataID;
+            string studentName = (UserManager.Instance?.StudentData != null && UserManager.Instance.StudentData.ContainsKey("Nombre"))? UserManager.Instance.StudentData["Nombre"].ToString(): "Desconocido";
+
+            // Actualizar el documento de la sala con los datos del estudiante
+            foreach (DocumentSnapshot doc in task.Result.Documents)
+            {
+                UpdateRoomWithStudent(doc.Id, studentId, studentName);
+            }
         }
         else
         {
             Debug.LogError("Código no encontrado.");
         }
+    }
+
+    private void UpdateRoomWithStudent(string roomId, string studentId, string studentName)
+    {
+        DocumentReference roomDocRef = db.Collection("rooms").Document(roomId);
+
+        // Crear el objeto que representa al estudiante
+        Dictionary<string, object> studentData = new Dictionary<string, object>
+    {
+        { "ID_Estudiante", studentId },
+        { "Nombre", studentName }
+    };
+
+        // Actualizar el campo "Estudiantes" agregando el nuevo estudiante a la lista
+        roomDocRef.UpdateAsync("Estudiantes", FieldValue.ArrayUnion(studentData)).ContinueWith(updateTask =>
+        {
+            if (updateTask.IsCompleted)
+            {
+                Debug.Log($"Estudiante {studentName} agregado a la sala con ID: {roomId}");
+            }
+            else
+            {
+                Debug.LogError("Error al agregar el estudiante a la sala: " + updateTask.Exception);
+            }
+        });
     }
 
     // Método para cambiar de escena
